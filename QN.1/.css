@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f6f7fb;
+            color: #333;
+
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(120deg, #ff6b6b, #4ecdc4);
+            color: white;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 8px;
+        }
+        nav {
+            background: #2d3436;
+            padding: 12px 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            list-style: none;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background: #636e72;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        .main {
+            padding: 25px;
+            background: burlywood;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+            backdrop-filter: blur(5px);
+        }
+        .main:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transform: translateY(-6px);
+}
+        .sidebar {
+            padding: 25px;
+            background: #3498db;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+        }
+        .sidebar ul { 
+            margin-top: 10px;
+            padding-left: 18px;
+        }
+        footer {
+            text-align: center;
+            background: #2d3436;
+            color: white;
+            padding: 18px;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2em; }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            nav { display: none; }
+
+            header {
+                padding: 25px 10px;
+            }
+
+            header h1 {
+                font-size: 1.6em;
+            }
+
+            .main, .sidebar {
+                padding: 18px;
+            }
+
+            footer {
+                padding: 12px;
+                font-size: 0.9em;
+            }
+        }
